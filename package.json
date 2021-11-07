@@ -1,0 +1,33 @@
+{
+	"name": "feathers-cf-kv",
+	"version": "0.0.1",
+	"description": "A feathers service adapter for Cloudflare KV",
+	"main": "lib/",
+	"keywords": [
+		"feathers",
+		"feathers-plugin",
+		"cloudflare",
+		"KV"
+	],
+	"scripts": {
+		"publish": "git push origin --tags",
+		"release:patch": "npm version patch && npm publish",
+		"release:minor": "npm version minor && npm publish",
+		"release:major": "npm version major && npm publish"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Spioune/feathers-cf-kv.git"
+	},
+	"author": "Spioune",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Spioune/feathers-cf-kv/issues"
+	},
+	"homepage": "https://github.com/Spioune/feathers-cf-kv#readme",
+	"dependencies": {
+		"@cfworker/uuid": "^1.9.1",
+		"@feathersjs/adapter-commons": "^4.5.11",
+		"itty-router": "^2.4.4"
+	}
+}
